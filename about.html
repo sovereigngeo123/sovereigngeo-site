@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SovereignGEO | Architectural Philosophy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=200;400;600&family=Syne:wght=700;800&display=swap" rel="stylesheet">
+    <style>
+        body { background: #03060E; color: #A1A1AA; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-display { font-family: 'Syne', sans-serif; }
+        html.lenis { height: auto; }
+        .lenis.lenis-smooth { scroll-behavior: auto !important; }
+        .luxury-gradient { background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        .hover-line::after {
+            content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px;
+            background: #F59E0B; transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .hover-line:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="overflow-x-hidden min-h-screen flex flex-col">
+
+    <header class="fixed w-full z-50 bg-[#03060E]/90 backdrop-blur-md border-b border-white/[0.03] px-6 md:px-12 py-6">
+        <div class="max-w-7xl mx-auto flex flex-col xl:flex-row justify-between items-center gap-4">
+            <a href="index.html" class="text-sm font-bold tracking-[0.3em] text-white font-display flex items-center gap-3">
+                <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+                </svg>
+                SOVEREIGN<span class="text-amber-500 font-normal">GEO</span>
+            </a>
+            
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[9px] uppercase tracking-[0.3em] font-semibold text-zinc-400">
+                <a href="index.html" class="hover:text-amber-500 transition relative hover-line">Home</a>
+                <a href="hospitality.html" class="hover:text-amber-500 transition relative hover-line">Hotels</a>
+                <a href="medical.html" class="hover:text-amber-500 transition relative hover-line">Medical</a>
+                <a href="automotive.html" class="hover:text-amber-500 transition relative hover-line">Automotive</a>
+                <a href="entertainment.html" class="hover:text-amber-500 transition relative hover-line">Entertainment</a>
+                <a href="education.html" class="hover:text-amber-500 transition relative hover-line">Education</a>
+                <a href="how-it-works.html" class="hover:text-amber-500 transition relative hover-line">Philosophy</a>
+                <a href="pricing.html" class="hover:text-amber-500 transition relative hover-line">Allocation</a>
+                <a href="about.html" class="text-white border-b border-amber-500/40 pb-0.5 relative">About</a>
+                <a href="audit.html" class="text-amber-500 relative font-bold hover:text-amber-400 transition">Audit</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex-grow flex items-center justify-center pt-48 xl:pt-40 pb-24">
+        <main id="content" class="w-full max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div class="lg:col-span-6 space-y-8">
+                <div class="space-y-4">
+                    <span class="text-[9px] font-mono tracking-[0.5em] text-amber-500 block uppercase">// SYSTEM MANIFESTO</span>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-white leading-[1.05] tracking-tight">
+                        The Authority <br><span class="luxury-gradient">Protocol.</span>
+                    </h1>
+                </div>
+                <p class="text-sm md:text-base leading-relaxed text-zinc-400 font-light">
+                    SovereignGEO was founded to solve a singular structural problem: the transition of discovery from legacy keyword links to natural, synthesized conversational intelligence models. Based out of Cape Town, we engineer data-layer injections globally, securing absolute entity alignment for institutions where performance and perfect positioning are non-negotiable.
+                </p>
+                <div class="space-y-4 font-mono text-[11px] text-zinc-500">
+                    <div class="flex items-start gap-3"><span class="text-amber-500">CORE /</span> <span>Zero-drift structural schema deployment</span></div>
+                    <div class="flex items-start gap-3"><span class="text-amber-500">GOAL /</span> <span>Total dominance inside international high-net-worth query hubs</span></div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 border border-white/5 bg-zinc-950/40 p-8 md:p-10 backdrop-blur-md relative space-y-6 font-mono text-xs text-zinc-400">
+                <div class="flex items-center justify-between border-b border-white/5 pb-4">
+                    <span class="text-[9px] text-zinc-500 uppercase tracking-widest">// SYSTEM_LOGS_v4.0</span>
+                    <span class="text-[8px] text-green-400 bg-green-500/10 px-2 py-0.5">OPERATIONAL</span>
+                </div>
+                <div class="space-y-4">
+                    <p class="font-sans text-sm text-white font-light leading-relaxed">
+                        We do not offer marketing. We offer absolute node alignment. By correcting unstructured entity profiles at the host server level, our infrastructure ensures that AI search engines parse your enterprise metrics with perfect fidelity.
+                    </p>
+                    <div class="p-4 bg-black/40 border border-white/5 space-y-2 text-[11px]">
+                        <div><span class="text-amber-500">► Engine Infrastructure:</span> Active Cluster Matrix</div>
+                        <div><span class="text-amber-500">► Verification Index:</span> 100% Schema Validation</div>
+                        <div><span class="text-amber-500">► Global Reach:</span> South Africa / International Hubs</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const lenis = new Lenis();
+        function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+        requestAnimationFrame(raf);
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.from("#content", { opacity: 0, y: 40, duration: 1.5, ease: "power4.out" });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SovereignGEO | Data Extraction Intake</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=200;400;600&family=Syne:wght=700;800&display=swap" rel="stylesheet">
+    <style>
+        body { background: #03060E; color: #A1A1AA; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-display { font-family: 'Syne', sans-serif; }
+        html.lenis { height: auto; }
+        .lenis.lenis-smooth { scroll-behavior: auto !important; }
+        .luxury-gradient { background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        .hover-line::after {
+            content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px;
+            background: #F59E0B; transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .hover-line:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="overflow-x-hidden min-h-screen flex flex-col">
+
+    <header class="fixed w-full z-50 bg-[#03060E]/90 backdrop-blur-md border-b border-white/[0.03] px-6 md:px-12 py-6">
+        <div class="max-w-7xl mx-auto flex flex-col xl:flex-row justify-between items-center gap-4">
+            <a href="index.html" class="text-sm font-bold tracking-[0.3em] text-white font-display flex items-center gap-3">
+                <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+                </svg>
+                SOVEREIGN<span class="text-amber-500 font-normal">GEO</span>
+            </a>
+            
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[9px] uppercase tracking-[0.3em] font-semibold text-zinc-400">
+                <a href="index.html" class="hover:text-amber-500 transition relative hover-line">Home</a>
+                <a href="hospitality.html" class="hover:text-amber-500 transition relative hover-line">Hotels</a>
+                <a href="medical.html" class="hover:text-amber-500 transition relative hover-line">Medical</a>
+                <a href="automotive.html" class="hover:text-amber-500 transition relative hover-line">Automotive</a>
+                <a href="entertainment.html" class="hover:text-amber-500 transition relative hover-line">Entertainment</a>
+                <a href="education.html" class="hover:text-amber-500 transition relative hover-line">Education</a>
+                <a href="how-it-works.html" class="hover:text-amber-500 transition relative hover-line">Philosophy</a>
+                <a href="pricing.html" class="hover:text-amber-500 transition relative hover-line">Allocation</a>
+                <a href="about.html" class="hover:text-amber-500 transition relative hover-line">About</a>
+                <a href="audit.html" class="text-amber-500 relative font-bold pb-0.5 border-b border-amber-500/40">Audit</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex-grow flex items-center justify-center pt-48 xl:pt-40 pb-24">
+        <main id="content" class="w-full max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 space-y-6">
+                <div class="space-y-4">
+                    <span class="text-[9px] font-mono tracking-[0.5em] text-amber-500 block uppercase">// INTAKE PROTOCOL</span>
+                    <h1 class="text-4xl sm:text-5xl font-display font-extrabold text-white leading-[1.05] tracking-tight">
+                        Evaluate Your <br><span class="luxury-gradient">Entity Vector.</span>
+                    </h1>
+                </div>
+                <p class="text-sm leading-relaxed text-zinc-400 font-light">
+                    Submit your organization endpoints. Our infrastructure will evaluate your indexing profile and calculate data dilution metrics across conversational search environments.
+                </p>
+            </div>
+
+            <div class="lg:col-span-6 border border-white/5 bg-zinc-950/40 p-8 backdrop-blur-md font-mono text-xs text-zinc-400">
+                <form class="space-y-6" onsubmit="event.preventDefault();">
+                    <div class="space-y-2">
+                        <label class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold">Corporate Entity Name</label>
+                        <input type="text" placeholder="e.g., Enterprise Holdings" class="w-full bg-black/40 border border-white/10 p-4 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold">Secure Root Domain</label>
+                        <input type="url" placeholder="https://enterprise.com" class="w-full bg-black/40 border border-white/10 p-4 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold">Communication Endpoint</label>
+                        <input type="email" placeholder="internal@enterprise.com" class="w-full bg-black/40 border border-white/10 p-4 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                    </div>
+                    <button type="submit" class="w-full py-4 text-center bg-amber-500 text-black font-bold uppercase text-[10px] tracking-widest transition-all duration-300 hover:bg-amber-400">
+                        Analyze System Node
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const lenis = new Lenis();
+        function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+        requestAnimationFrame(raf);
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.from("#content", { opacity: 0, y: 40, duration: 1.5, ease: "power4.out" });
+        });
+    </script>
+</body>
+</html>

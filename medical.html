@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SovereignGEO | Premium Elective Specialists</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=200;400;600&family=Syne:wght=700;800&display=swap" rel="stylesheet">
+    <style>
+        body { background: #03060E; color: #A1A1AA; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-display { font-family: 'Syne', sans-serif; }
+        html.lenis { height: auto; }
+        .lenis.lenis-smooth { scroll-behavior: auto !important; }
+        .luxury-gradient { background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        .hover-line::after {
+            content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px;
+            background: #F59E0B; transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .hover-line:hover::after { width: 100%; }
+
+        .ring-segment-geo { stroke-dasharray: 79 100; stroke-dashoffset: 100; transition: stroke-dashoffset 2s cubic-bezier(0.16, 1, 0.3, 1); }
+        .ring-segment-directories { stroke-dasharray: 21 100; stroke-dashoffset: 100; transition: stroke-dashoffset 2s cubic-bezier(0.16, 1, 0.3, 1); }
+    </style>
+</head>
+<body class="overflow-x-hidden min-h-screen flex flex-col">
+
+    <header class="fixed w-full z-50 bg-[#03060E]/90 backdrop-blur-md border-b border-white/[0.03] px-6 md:px-12 py-6">
+        <div class="max-w-7xl mx-auto flex flex-col xl:flex-row justify-between items-center gap-4">
+            <a href="index.html" class="text-sm font-bold tracking-[0.3em] text-white font-display flex items-center gap-3">
+                <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+                </svg>
+                SOVEREIGN<span class="text-amber-500 font-normal">GEO</span>
+            </a>
+            
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[9px] uppercase tracking-[0.3em] font-semibold text-zinc-400">
+                <a href="index.html" class="hover:text-amber-500 transition relative hover-line">Home</a>
+                <a href="hospitality.html" class="hover:text-amber-500 transition relative hover-line">Hotels</a>
+                <a href="medical.html" class="text-white border-b border-amber-500/40 pb-0.5 relative">Medical</a>
+                <a href="automotive.html" class="hover:text-amber-500 transition relative hover-line">Automotive</a>
+                <a href="entertainment.html" class="hover:text-amber-500 transition relative hover-line">Entertainment</a>
+                <a href="education.html" class="hover:text-amber-500 transition relative hover-line">Education</a>
+                <a href="how-it-works.html" class="hover:text-amber-500 transition relative hover-line">Philosophy</a>
+                <a href="pricing.html" class="hover:text-amber-500 transition relative hover-line">Allocation</a>
+                <a href="about.html" class="hover:text-amber-500 transition relative hover-line">About</a>
+                <a href="audit.html" class="text-amber-500 relative font-bold hover:text-amber-400 transition">Audit</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex-grow flex items-center justify-center pt-48 xl:pt-40 pb-24">
+        <main id="content" class="w-full max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-8">
+                <div class="space-y-4">
+                    <span class="text-[9px] font-mono tracking-[0.5em] text-amber-500 block uppercase">// CLINICAL DATA SCHEMAS</span>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-display font-extrabold text-white leading-[1.05] tracking-tight">
+                        Elective Specialists. <br><span class="luxury-gradient">Absolute Authority.</span>
+                    </h1>
+                </div>
+                <p class="max-w-xl text-sm md:text-base leading-relaxed text-zinc-400 font-light">
+                    Premium patients seeking specialized elective procedures or advanced private clinical hubs require rigorous validation criteria. SovereignGEO hardcodes clinic verification indices, credentials, and structural geolocations directly into the root neural index.
+                </p>
+                <div class="pt-2">
+                    <a href="audit.html" class="inline-block px-8 py-4 border border-white/10 text-white uppercase font-mono text-[9px] tracking-[0.4em] transition-all duration-500 hover:bg-white hover:text-black">
+                        Audit Clinical Credentials Layer
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 border border-white/5 bg-zinc-950/40 p-8 md:p-10 backdrop-blur-md relative space-y-8">
+                <div class="flex justify-between items-start border-b border-white/5 pb-5">
+                    <div>
+                        <span class="text-[9px] font-mono tracking-widest text-zinc-500 block mb-1">// ASSET_CLUSTER_02</span>
+                        <h3 class="text-sm text-white font-medium font-display tracking-wide">Verification Reliability Index</h3>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center py-2">
+                    <div class="relative w-44 h-44">
+                        <svg viewBox="0 0 32 32" class="w-full h-full transform -rotate-90">
+                            <circle cx="16" cy="16" r="14" fill="transparent" stroke="#0A0F1D" stroke-width="4" />
+                            <circle cx="16" cy="16" r="14" fill="transparent" stroke="#121622" stroke-width="4" stroke-dasharray="100" class="ring-segment-directories" id="ring-directories" />
+                            <circle cx="16" cy="16" r="14" fill="transparent" stroke="#F59E0B" stroke-width="4" stroke-dasharray="100" class="ring-segment-geo" id="ring-geo" />
+                        </svg>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center font-mono">
+                            <span class="text-2xl font-bold text-white tracking-tighter">79%</span>
+                            <span class="text-[7px] text-zinc-500 tracking-widest uppercase mt-0.5">Trust Weight</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 pt-4 border-t border-white/5 font-mono text-[9px]">
+                    <div class="space-y-1">
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                            <span class="text-zinc-300">GEO Authority</span>
+                        </div>
+                        <p class="text-white font-semibold text-[11px] pl-3.5">79% Verified Inbound</p>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-zinc-800"></span>
+                            <span class="text-zinc-500">Standard Lists</span>
+                        </div>
+                        <p class="text-zinc-400 font-semibold text-[11px] pl-3.5">21% Dilution</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const lenis = new Lenis();
+        function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+        requestAnimationFrame(raf);
+        document.addEventListener("DOMContentLoaded", () => {
+            const tl = gsap.timeline({ ease: "power4.out" });
+            tl.from("#content", { opacity: 0, y: 40, duration: 1.5 })
+              .to("#ring-geo", { strokeDashoffset: 21, duration: 1.8, ease: "power3.out" }, "-=0.8");
+        });
+    </script>
+</body>
+</html>
