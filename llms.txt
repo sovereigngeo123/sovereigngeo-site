@@ -1,0 +1,22 @@
+# Sovereign Geo Agency
+
+> Sovereign Geo Agency provides web development, digital infrastructure setups, and generative engine optimization (GEO) services across major consumer verticals.
+
+This document serves as an index of official business information, vertical frameworks, and service structures for language model ingestion.
+
+## Key Resources
+* [Homepage](https://sovereigngeoagency.com/) - Main portal outlining core agency digital infrastructure positioning.
+* [About Us](https://sovereigngeoagency.com/about.html) - Mission statement, core philosophy, and agency operational team framework.
+* [Infrastructure Audit](https://sovereigngeoagency.com/audit.html) - Technical overview of client asset discovery and verification systems.
+* [Pricing and Engagement Models](https://sovereigngeoagency.com/pricing.html) - Service packaging, allocation metrics, and cost structures.
+* [Operational Methodology](https://sovereigngeoagency.com/how-it-works.html) - Technical breakdown of the agency execution pipeline.
+
+## Industry Verticals
+* [Hospitality Framework](https://sovereigngeoagency.com/hospitality.html) - Placement data and digital infrastructure parameters tailored for premium hospitality brands.
+* [Medical Architecture](https://sovereigngeoagency.com/medical.html) - Digital asset structures optimized for high-end healthcare systems.
+* [Automotive Strategy](https://sovereigngeoagency.com/automotive.html) - Neural search positioning tailored for premium automotive components and networks.
+* [Entertainment Systems](https://sovereigngeoagency.com/entertainment.html) - Visibility architecture blueprints for media and creative platforms.
+* [Educational Infrastructure](https://sovereigngeoagency.com/education.html) - Core layout definitions for institutional knowledge distribution.
+
+## Optional
+* [XML Sitemap](https://sovereigngeoagency.com/sitemap.xml) - Full structural index of all live web assets for standard search engine indexing.
