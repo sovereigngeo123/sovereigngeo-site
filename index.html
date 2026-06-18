@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SovereignGEO | Request Received</title>
+    <title>SovereignGEO | Luxury Hotel AI Visibility Audits</title>
+    <meta name="description" content="Independent AI Search Optimization and AI Visibility Audits for luxury hospitality brands. Evaluate your luxury hotel AI search presence and competitive positioning.">
+    <link rel="canonical" href="https://sovereigngeoagency.com">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SovereignGEO | Luxury Hotel AI Discovery Audits & GEO">
+    <meta property="og:description" content="Identify visibility risks where your hotel may be excluded from key conversational search platforms. Evaluate your brand authority across AI networks.">
+    <meta property="og:url" content="https://sovereigngeoagency.com">
+    <meta property="og:site_name" content="SovereignGEO">
     
     <!-- Scripts & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600&family=Syne:wght=600;700&display=swap" rel="stylesheet">
     
     <script>
@@ -26,14 +34,81 @@
     <style>
         body { background: #02040A; color: #A1A1AA; letter-spacing: -0.01em; }
         .luxury-gradient { background: linear-gradient(135deg, #FFFFFF 0%, #D4D4D8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .text-balance { text-wrap: balance; }
+        input:focus { outline: none; }
     </style>
+
+    <!-- ADVANCED SEO & GEO INTEGRATION SCHEMA (LOS ANGELES REGION) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://sovereigngeoagency.com/#organization",
+          "name": "SovereignGEO",
+          "url": "https://sovereigngeoagency.com",
+          "image": "https://sovereigngeoagency.com/assets/og-image.jpg",
+          "description": "AI Visibility Audits and Generative Engine Optimization consulting for luxury hotels and hospitality brands.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90012",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://sovereigngeoagency.com/#website",
+          "url": "https://sovereigngeoagency.com",
+          "name": "SovereignGEO",
+          "publisher": {
+            "@id": "https://sovereigngeoagency.com/#organization"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "AI Visibility Audit",
+          "provider": {
+            "@id": "https://sovereigngeoagency.com/#organization"
+          },
+          "areaServed": "Worldwide",
+          "audience": {
+            "@type": "Audience",
+            "audienceType": "Hotel Executives, General Managers, VPs of Marketing"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Hospitality GEO Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Hotel AI Search Presence Verification"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Structured Data & Entity Recognition Review"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="overflow-x-hidden min-h-screen flex flex-col antialiased">
-    
-    <!-- Navigation Baseline -->
+
+    <!-- Navigation -->
     <header class="fixed w-full z-50 bg-[#02040A]/90 backdrop-blur-md border-b border-white/[0.03] px-6 md:px-12 py-5">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-xs font-bold tracking-[0.4em] text-white font-display flex items-center gap-3">
+            <a href="index.html" class="text-xs font-bold tracking-[0.4em] text-white font-display flex items-center gap-3" aria-label="SovereignGEO Homepage">
                 <svg class="w-3.5 h-3.5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <circle cx="12" cy="12" r="4" />
                     <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
@@ -42,56 +117,311 @@
             </a>
             <nav class="flex items-center gap-x-8 text-[10px] uppercase tracking-[0.25em] font-medium text-zinc-400">
                 <a href="index.html" class="hover:text-white transition-colors">Home</a>
-                <a href="audit.html" class="hover:text-white transition-colors">Audit Portal</a>
+                <a href="audit.html" class="hover:text-white transition-colors">Sample Audit</a>
+                <a href="about.html" class="hover:text-white transition-colors">About</a>
+                <a href="audit.html#audit-form" class="border border-amber-600/30 px-4 py-2 text-white bg-amber-600/5 hover:bg-amber-600 hover:text-black transition-all duration-300">Request Audit</a>
             </nav>
         </div>
     </header>
 
-    <!-- Success Message Container -->
-    <main id="success-panel" class="flex-grow flex items-center justify-center pt-32 pb-16 px-6 opacity-0 transform translate-y-4">
-        <div class="w-full max-w-xl border border-white/5 bg-zinc-950/50 p-8 md:p-12 text-center space-y-8 backdrop-blur-md rounded-sm">
-            
-            <div class="space-y-3">
-                <span class="text-[9px] font-mono tracking-[0.6em] text-amber-600 block uppercase font-semibold">// REGISTRATION SUCCESSFUL</span>
-                <h1 class="text-2xl md:text-3xl font-display font-bold text-white tracking-tight">
-                    Thank You. <br><span class="luxury-gradient">Your Audit is Scheduled.</span>
-                </h1>
-            </div>
-
-            <div class="w-12 h-[1px] bg-amber-600/40 mx-auto"></div>
-
-            <p class="text-xs font-sans text-zinc-400 font-light leading-relaxed max-w-md mx-auto">
-                Welcome to SovereignGEO. We have received your asset registration details and structural domain specifications. Our analysis engines are verifying your digital footprint parameters.
+    <!-- Content Wrapper -->
+    <div class="flex-grow flex flex-col items-center w-full">
+        
+        <!-- 1. Hero Section -->
+        <section class="w-full max-w-7xl mx-auto px-6 md:px-12 pt-36 pb-8 text-center space-y-6" aria-label="Introduction">
+            <span class="text-[9px] font-mono tracking-[0.6em] text-amber-600 block uppercase font-semibold">// SPECIALIZED HOSPITALITY AUDIT</span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-display font-bold text-white leading-[1.1] tracking-tight max-w-5xl mx-auto text-balance">
+                Discover Whether AI Platforms Recommend Your Hotel — <span class="luxury-gradient">Or Send Travelers To Competitors.</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-zinc-400 font-light text-sm md:text-base leading-relaxed text-balance">
+                We assess how your hotel appears across leading AI platforms, identify where competing properties are recommended instead, and highlight visibility gaps that may influence future booking discovery.
             </p>
+        </section>
 
-            <!-- Timeframe Notice Box -->
-            <div class="border border-white/5 bg-[#02040A]/60 p-4 rounded-sm font-mono text-[11px] text-left space-y-2">
-                <p class="text-white uppercase tracking-wider font-semibold text-[10px] text-amber-600">// NEXT STEP PARAMETERS</p>
-                <div class="text-zinc-400 space-y-1 font-light">
-                    <p><span class="text-zinc-500">Processing Window:</span> 72 business hours</p>
-                    <p><span class="text-zinc-500">Delivery Method:</span> Secure Executive PDF Summary</p>
-                    <p><span class="text-zinc-500">Sender Identity:</span> advisory@sovereigngeoagency.com</p>
+        <!-- Platform Trust Strip -->
+        <div class="w-full border-y border-white/[0.03] bg-zinc-950/30 py-4 mb-16">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 text-center text-[10px] font-mono tracking-[0.25em] text-zinc-500 uppercase">
+                Analyzing visibility across: 
+                <span class="text-zinc-300 ml-2">ChatGPT</span> • 
+                <span class="text-zinc-300 mx-1">Gemini</span> • 
+                <span class="text-zinc-300 mx-1">Perplexity</span> • 
+                <span class="text-zinc-300 ml-1">Google AI Overviews</span>
+            </div>
+        </div>
+
+        <!-- 2. Strategic Context: How Hotels Are Found In AI -->
+        <section class="w-full max-w-5xl mx-auto px-6 md:px-12 pb-16" aria-label="How AI Discovery Works">
+            <div class="bg-zinc-950/60 border border-white/5 p-8 rounded-sm">
+                <h3 class="text-center text-white font-display text-sm tracking-[0.2em] uppercase mb-8">How Hotels Are Found In AI</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                    
+                    <!-- Step 1 -->
+                    <div class="space-y-2 relative z-10">
+                        <div class="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest">// 01. Traveler Request</div>
+                        <p class="text-white font-medium text-xs">A high-intent traveler prompts an AI model:</p>
+                        <p class="text-zinc-400 text-xs font-mono italic bg-zinc-900/50 p-3 border border-white/[0.03]">
+                            "What are the best luxury hotels in Los Angeles with private pool villas and 5-star service?"
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="space-y-2 relative z-10">
+                        <div class="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest">// 02. Engine Synthesis</div>
+                        <p class="text-white font-medium text-xs">The platform processes data signals:</p>
+                        <p class="text-zinc-400 text-xs font-sans font-light leading-relaxed">
+                            The AI engine rapidly aggregates trusted data layers, luxury classifications, brand authority metrics, and entity signals to select options.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="space-y-2 relative z-10">
+                        <div class="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest">// 03. Recommended Outcome</div>
+                        <p class="text-white font-medium text-xs">The final recommendation set is built:</p>
+                        <p class="text-zinc-300 font-sans text-xs font-semibold">
+                            Your hotel appears with direct paths to booking, <span class="text-red-500 font-normal">OR a direct area competitor captures the visibility share.</span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="mt-8 pt-6 border-t border-white/[0.03] text-center">
+                    <p class="text-xs text-zinc-400 font-mono">
+                        Our audit identifies exactly which outcome is occurring for your property across major platforms.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Lead Capture Matrix -->
+        <section id="audit-form" class="w-full max-w-7xl mx-auto px-6 md:px-12 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start" aria-label="Lead Capture Matrix">
+            
+            <!-- Left Side: Concrete Value Prop -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="border border-amber-600/20 bg-amber-600/5 p-6">
+                    <p class="text-amber-400 text-xs font-mono uppercase tracking-widest font-semibold mb-1">Limited Assessment Capacity</p>
+                    <p class="text-white text-sm leading-relaxed font-light">
+                        Each assessment is prepared manually and delivered as an executive-ready briefing. Capacity is limited to maintain a detailed review process.
+                    </p>
+                </div>
+
+                <div class="bg-zinc-950/40 border border-white/5 p-8 space-y-6">
+                    <h2 class="text-base font-display font-bold text-white tracking-wide uppercase">Your Complimentary Hotel AI Visibility Audit Includes:</h2>
+                    <ul class="space-y-3 font-mono text-xs text-zinc-300">
+                        <li class="flex items-center gap-3"><span class="text-amber-600">▪</span> <strong>AI Visibility Score</strong> — Platform recognition assessment</li>
+                        <li class="flex items-center gap-3"><span class="text-amber-600">▪</span> <strong>Competitor Recommendation Comparison</strong> — Head-to-head destination query tracking</li>
+                        <li class="flex items-center gap-3"><span class="text-amber-600">▪</span> <strong>Structured Data & Entity Review</strong> — Critical data marker gap analysis</li>
+                        <li class="flex items-center gap-3"><span class="text-amber-600">▪</span> <strong>Recommended Actions Ranked By Impact</strong> — Clear commercial prioritization</li>
+                    </ul>
                 </div>
             </div>
 
+            <!-- Right Side: Conversion Form Container -->
+            <div class="lg:col-span-5 bg-zinc-900/30 border border-white/5 p-8 md:p-10 shadow-2xl relative">
+                
+                <div class="mb-6 p-5 bg-zinc-950/80 border border-amber-600/20 rounded-sm font-mono text-xs">
+                    <p class="text-white font-bold uppercase tracking-wider mb-3 text-[11px]">What You'll Receive:</p>
+                    <ul class="space-y-2 text-zinc-400 text-[11px]">
+                        <li class="flex items-center gap-2"><span class="text-amber-600">✓</span> AI Visibility Score</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-600">✓</span> Competitor Recommendation Analysis</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-600">✓</span> Structured Data Review</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-600">✓</span> Executive Summary PDF</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-600">✓</span> Recommended Actions Ranked By Impact</li>
+                    </ul>
+                    <p class="text-amber-600 mt-4 text-[10px] uppercase tracking-widest font-semibold">Delivered within 72 hours.</p>
+                </div>
+
+                <!-- Formspree Integration Hook with Thank-You Redirect -->
+                <form class="space-y-6" action="https://formspree.io/f/xojzlaze" method="POST">
+                    <!-- Formspree Custom Redirect Field -->
+                    <input type="hidden" name="_next" value="https://sovereigngeoagency.com/thank-you.html">
+                    
+                    <div>
+                        <label for="name" class="block text-[10px] font-mono uppercase text-zinc-500 mb-2 tracking-wider">Name</label>
+                        <input type="text" id="name" name="name" class="w-full bg-transparent border-b border-white/10 pb-3 text-white focus:border-amber-600 transition" required>
+                    </div>
+                    <div>
+                        <label for="website" class="block text-[10px] font-mono uppercase text-zinc-500 mb-2 tracking-wider">Hotel Website</label>
+                        <input type="url" id="website" name="website" placeholder="https://" class="w-full bg-transparent border-b border-white/10 pb-3 text-white focus:border-amber-600 transition placeholder:text-zinc-800" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-[10px] font-mono uppercase text-zinc-500 mb-2 tracking-wider">Work Email</label>
+                        <input type="email" id="email" name="email" class="w-full bg-transparent border-b border-white/10 pb-3 text-white focus:border-amber-600 transition" required>
+                    </div>
+                    
+                    <button type="submit" class="w-full py-5 mt-4 bg-amber-600 text-black uppercase font-mono text-[11px] font-semibold tracking-[0.3em] hover:bg-white transition-all duration-300 shadow-md">
+                        Claim Complimentary Audit
+                    </button>
+                    
+                    <div class="text-[10px] font-mono text-zinc-500 text-center uppercase tracking-wider pt-3 space-y-1 border-t border-white/5 mt-4">
+                        <p class="text-zinc-400">✓ No sales commitment required.</p>
+                        <p class="text-zinc-400">✓ Complimentary assessment delivered within 72 hours.</p>
+                        <p class="text-amber-600 font-semibold">✓ Strictly confidential review.</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- 3. Recent Audit Example Section -->
+        <section class="w-full bg-zinc-950 border-y border-white/[0.03] py-16" aria-label="Recent Audit Example">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-16 justify-between">
+                <div class="lg:w-1/3 shrink-0">
+                    <span class="text-[9px] font-mono tracking-[0.5em] text-amber-600 block uppercase font-semibold mb-2">// REAL-WORLD METRIC BENCHMARK</span>
+                    <h3 class="text-xl md:text-2xl font-display font-bold text-white tracking-tight">Recent Assessment <br class="hidden md:inline"><span class="text-zinc-500 italic font-normal text-lg md:text-xl">(Property Name Withheld)</span></h3>
+                    <p class="text-xs text-zinc-400 mt-3 font-light leading-relaxed">
+                        This sample illustrates how incomplete entity signals and structured data gaps can reduce a property's visibility across AI-generated hotel recommendations.
+                    </p>
+                </div>
+                <div class="w-full grid grid-cols-2 lg:grid-cols-4 gap-6 text-[11px] font-mono text-zinc-400">
+                    <div class="space-y-1">
+                        <span class="text-red-500 font-sans font-bold text-3xl block tracking-tight">42<span class="text-zinc-600 text-lg font-normal">/100</span></span> 
+                        <span class="uppercase tracking-wider block pt-1">AI Visibility Score</span>
+                    </div>
+                    <div class="space-y-1 border-l border-white/[0.03] pl-6">
+                        <span class="text-red-500 font-sans font-bold text-3xl block tracking-tight">71%</span> 
+                        <span class="uppercase tracking-wider block pt-1">Missing from tested prompts</span>
+                    </div>
+                    <div class="space-y-1 border-l border-white/[0.03] pl-6">
+                        <span class="text-red-500 font-sans font-bold text-3xl block tracking-tight">5.2x</span> 
+                        <span class="uppercase tracking-wider block pt-1">Competitor dominance share</span>
+                    </div>
+                    <div class="space-y-1 border-l border-white/[0.03] pl-6">
+                        <span class="text-red-500 font-sans font-bold text-3xl block tracking-tight">24</span> 
+                        <span class="uppercase tracking-wider block pt-1">Critical validation gaps</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="max-w-7xl mx-auto px-6 md:px-12 mt-12 pt-8 border-t border-white/5 grid grid-cols-1 md:grid-cols-3 gap-6 text-xs leading-relaxed font-light text-zinc-400">
+                <div>
+                    <span class="block uppercase font-mono text-[9px] text-zinc-500 font-semibold tracking-wider mb-1">Core Issue:</span>
+                    The property's premium accommodations, awards, and key differentiators were not consistently reinforced through structured data and authoritative references, reducing how clearly AI systems interpret and recommend the asset.
+                </div>
+                <div>
+                    <span class="block uppercase font-mono text-[9px] text-zinc-500 font-semibold tracking-wider mb-1">Business Impact:</span>
+                    When travelers request luxury hotel recommendations in this market, competing properties may be surfaced more frequently. Reduced AI visibility can limit exposure during early-stage destination research and booking consideration.
+                </div>
+                <div>
+                    <span class="block uppercase font-mono text-[9px] text-amber-600 font-semibold tracking-wider mb-1">Recommended Action:</span>
+                    Strengthen structured data implementation, improve entity consistency across authoritative sources, and reinforce luxury positioning signals that AI systems use when evaluating hotel recommendations.
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Concrete Authority Framework -->
+        <section class="w-full max-w-7xl mx-auto px-6 md:px-12 py-24 border-b border-white/[0.02]" aria-labelledby="authority-heading">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-12">
+                <span class="text-[9px] font-mono tracking-[0.5em] text-amber-600 block uppercase font-semibold">// ALIGNMENT CRITERIA</span>
+                <h2 id="authority-heading" class="text-2xl md:text-3xl font-display font-bold text-white tracking-tight">Why Hotel Executives Request Assessments</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto text-xs font-mono text-zinc-300">
+                <div class="p-6 border border-white/5 bg-zinc-950/40 space-y-2">
+                    <h4 class="text-white font-display text-sm font-semibold tracking-wide">Verify How AI Platforms Describe Your Property</h4>
+                    <p class="text-zinc-400 font-sans font-light leading-relaxed">Objective, neutral verification across conversational discovery ecosystems away from direct agency bias.</p>
+                </div>
+                <div class="p-6 border border-white/5 bg-zinc-950/40 space-y-2">
+                    <h4 class="text-white font-display text-sm font-semibold tracking-wide">Luxury Hospitality Focus</h4>
+                    <p class="text-zinc-400 font-sans font-light leading-relaxed">Tailored specifically around brand standards, high-tier suite indexes, and target destination metrics.</p>
+                </div>
+                <div class="p-6 border border-white/5 bg-zinc-950/40 space-y-2">
+                    <h4 class="text-white font-display text-sm font-semibold tracking-wide">Recommendation Benchmarking</h4>
+                    <p class="text-zinc-400 font-sans font-light leading-relaxed">Head-to-head local positioning data pinpointing exact regional competitor visibility metrics.</p>
+                </div>
+                <div class="p-6 border border-white/5 bg-zinc-950/40 space-y-2 lg:col-start-2">
+                    <h4 class="text-white font-display text-sm font-semibold tracking-wide">Structured Data Review</h4>
+                    <p class="text-zinc-400 font-sans font-light leading-relaxed">Granular code configuration tracking to optimize platform discovery and entity recognition profiles.</p>
+                </div>
+                <div class="p-6 border border-white/5 bg-zinc-950/40 space-y-2 md:col-span-2 lg:col-span-1">
+                    <h4 class="text-white font-display text-sm font-semibold tracking-wide">Executive-Ready Reporting</h4>
+                    <p class="text-zinc-400 font-sans font-light leading-relaxed">Clear, synthesized data roadmaps built natively for ownership and executive board communication.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Platforms Covered & What We Evaluate Combined Area -->
+        <section class="w-full bg-zinc-950/30 py-24 border-b border-white/[0.03]" aria-label="Platforms Covered & Evaluation Matrix">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left Column: Platforms Covered -->
+                <div class="space-y-4">
+                    <h2 class="text-[10px] font-mono tracking-[0.5em] text-amber-600 block uppercase font-semibold">Tested AI Discovery Platforms</h2>
+                    <div class="grid grid-cols-2 gap-4 text-sm md:text-base font-display font-medium text-white pt-2">
+                        <span class="flex items-center gap-2"><span class="text-amber-600">✓</span> ChatGPT</span>
+                        <span class="flex items-center gap-2"><span class="text-amber-600">✓</span> Gemini</span>
+                        <span class="flex items-center gap-2"><span class="text-amber-600">✓</span> Perplexity</span>
+                        <span class="flex items-center gap-2"><span class="text-amber-600">✓</span> Google AI Overviews</span>
+                    </div>
+                    <p class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest pt-4">
+                        Measured using real-world traveler and high-intent queries.
+                    </p>
+                </div>
+
+                <!-- Right Column: Evaluation Indicators -->
+                <div class="bg-zinc-950/80 border border-white/5 p-8">
+                    <h3 class="text-white font-display text-lg mb-6 tracking-wide text-center lg:text-left">
+                        What We Evaluate
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono text-zinc-300">
+                        <div class="flex items-center gap-2"><span>✓</span> AI recommendation visibility</div>
+                        <div class="flex items-center gap-2"><span>✓</span> Hotel entity recognition</div>
+                        <div class="flex items-center gap-2"><span>✓</span> Structured data implementation</div>
+                        <div class="flex items-center gap-2"><span>✓</span> Competitor recommendation frequency</div>
+                        <div class="flex items-center gap-2"><span>✓</span> Brand authority signals</div>
+                        <div class="flex items-center gap-2"><span>✓</span> Direct booking discovery pathways</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. Deliverables Section -->
+        <section class="w-full max-w-7xl mx-auto px-6 md:px-12 py-24 border-b border-white/[0.02]" aria-label="Included Deliverables">
+            <h2 class="text-2xl md:text-3xl font-display font-bold text-white tracking-tight text-center mb-12">What Your Audit Contains</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+                <div class="space-y-6 bg-zinc-950/30 p-8 border border-white/5">
+                    <ul class="space-y-4 font-mono text-xs text-zinc-300">
+                        <li class="flex items-center gap-3"><span class="text-amber-600 text-sm">✓</span> AI platform visibility assessment</li>
+                        <li class="flex items-center gap-3"><span class="text-amber-600 text-sm">✓</span> Competitor recommendation comparison</li>
+                        <li class="flex items-center gap-3"><span class="text-amber-600 text-sm">✓</span> Structured data and entity review</li>
+                        <li class="flex items-center gap-3"><span class="text-amber-600 text-sm">✓</span> Executive summary of priority findings</li>
+                        <li class="flex items-center gap-3"><span class="text-amber-600 text-sm">✓</span> Recommended actions ranked by impact</li>
+                    </ul>
+                </div>
+                <div class="space-y-4 text-sm text-zinc-400 font-light font-sans leading-relaxed">
+                    <p class="font-semibold text-white font-display text-base tracking-wide uppercase">Generative Engine Optimization (GEO)</p>
+                    <p>
+                        AI platforms evaluate information from your website, trusted third-party sources, reviews, and structured data when deciding which hotels to recommend. As digital platforms reshape traveler acquisition, your visibility relies on these clear digital signals rather than legacy search rankings.
+                    </p>
+                    <p>
+                        SovereignGEO provides objective, corporate-grade evaluation frameworks. By identifying precisely where clarity gaps exist, we supply technical roadmaps designed to protect market positioning across emerging platform interfaces.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Final Action Context -->
+        <section class="w-full max-w-4xl mx-auto px-6 py-24 text-center space-y-8" aria-label="Closing Action">
+            <div class="space-y-2">
+                <span class="text-[9px] font-mono tracking-[0.4em] text-amber-600 block uppercase font-semibold">// STRATEGIC PRESENCE PROTECTION</span>
+                <h2 class="text-2xl md:text-3xl font-display font-bold text-white tracking-tight">Evaluate Your Hotel’s Discovery Status</h2>
+            </div>
+            <p class="text-sm text-zinc-400 font-light max-w-2xl mx-auto leading-relaxed">
+                Ensure your properties are accurately tracked, interpreted, and presented by AI recommendation models during automated luxury accommodation search sequences.
+            </p>
             <div class="pt-4">
-                <a href="index.html" class="inline-block px-6 py-3 border border-white/10 text-white font-mono text-[10px] uppercase tracking-widest transition-all duration-300 hover:bg-white hover:text-black rounded-sm">
-                    Return To Homepage
+                <a href="#audit-form" class="inline-block px-10 py-5 bg-amber-600 text-black uppercase font-mono text-xs font-semibold tracking-[0.3em] hover:bg-white transition-all duration-300 shadow-md">
+                    Claim Complimentary Audit
                 </a>
             </div>
-        </div>
-    </main>
+        </section>
 
-    <!-- Footer Baseline -->
-    <footer class="w-full border-t border-white/5 bg-zinc-950 py-8 text-center text-[10px] font-mono tracking-wider text-zinc-600">
-        <p>&copy; 2026 SovereignGEO. All rights reserved.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-white/5 bg-zinc-950 py-12 px-6 md:px-12 text-center" aria-label="Site Footer">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-[11px] font-mono tracking-wider text-zinc-500 uppercase">
+            <p>SOVEREIGNGEO — AI Visibility Audits & Digital Discoverability Strategy</p>
+            <p class="text-[10px] text-zinc-600 font-light font-sans normal-case">&copy; 2026 SovereignGEO. All rights reserved.</p>
+        </div>
     </footer>
 
-    <!-- Entry Animation Script -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            gsap.to("#success-panel", { opacity: 1, y: 0, duration: 1, ease: "power3.out" });
-        });
-    </script>
 </body>
 </html>
