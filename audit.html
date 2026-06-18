@@ -7,7 +7,6 @@
     <meta name="description" content="Request a complimentary AI search visibility audit for your luxury hotel or boutique resort brand. Evaluate your presence across ChatGPT, Gemini, and Perplexity.">
     <link rel="canonical" href="https://sovereigngeoagency.com/audit.html">
     
-    <!-- Scripts & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
@@ -41,7 +40,6 @@
 </head>
 <body class="overflow-x-hidden min-h-screen flex flex-col antialiased">
     
-    <!-- Navigation -->
     <header class="fixed w-full z-50 bg-[#02040A]/90 backdrop-blur-md border-b border-white/[0.03] px-6 md:px-12 py-5">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <a href="index.html" class="text-xs font-bold tracking-[0.4em] text-white font-display flex items-center gap-3" aria-label="SovereignGEO Homepage">
@@ -60,10 +58,8 @@
         </div>
     </header>
 
-    <!-- Content Wrapper -->
     <div id="content" class="flex-grow pt-40 pb-24 space-y-32 opacity-0">
         
-        <!-- HERO & FORM SECTION -->
         <main id="audit-form" class="w-full max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start" aria-label="Audit Request Portal">
             <div class="lg:col-span-6 space-y-8">
                 <div class="space-y-4">
@@ -83,7 +79,6 @@
                     </p>
                 </div>
 
-                <!-- DELIVERABLES BOX -->
                 <div class="border border-white/5 bg-zinc-950/40 p-6 space-y-4 rounded-sm">
                     <h3 class="text-xs font-mono font-bold uppercase tracking-wider text-white">// Included Matrix Metrics</h3>
                     <ul class="space-y-2.5 text-xs text-zinc-400 font-light">
@@ -97,7 +92,6 @@
                 </div>
             </div>
 
-            <!-- THE AUDIT APPLICATION FORM CONTAINER -->
             <div class="lg:col-span-6 border border-white/5 bg-zinc-950/60 p-8 backdrop-blur-md font-mono text-xs text-zinc-400 rounded-sm relative">
                 <form id="formspree-audit-form" action="https://formspree.io/f/xojzlaze" method="POST" class="space-y-6">
                     <input type="text" name="_gotcha" style="display:none">
@@ -126,14 +120,10 @@
                     </div>
                 </form>
 
-                <!-- Dynamic Status Message Overlay Area -->
-                <div id="form-status-msg" class="hidden absolute inset-0 bg-zinc-950/95 flex flex-col items-center justify-center p-8 text-center space-y-4 rounded-sm transition-all duration-300">
-                    <!-- Dynamic updates loaded via JS below -->
-                </div>
+                <div id="form-status-msg" class="hidden absolute inset-0 bg-zinc-950/95 flex flex-col items-center justify-center p-8 text-center space-y-4 rounded-sm transition-all duration-300"></div>
             </div>
         </main>
 
-        <!-- AUDIT PREVIEW SECTION -->
         <section class="w-full max-w-7xl mx-auto px-6 md:px-12 space-y-8" aria-label="Audit Metrics Frame">
             <div class="space-y-2">
                 <span class="text-[9px] font-mono tracking-[0.5em] text-amber-600 block uppercase font-semibold">// AUDIT INTELLIGENCE</span>
@@ -164,7 +154,6 @@
             </p>
         </section>
 
-        <!-- PROCESS SECTION -->
         <section class="w-full max-w-7xl mx-auto px-6 md:px-12 space-y-12" aria-label="Process Outline">
             <div class="space-y-2">
                 <span class="text-[9px] font-mono tracking-[0.5em] text-amber-600 block uppercase font-semibold">// METHODOLOGY</span>
@@ -195,7 +184,6 @@
             </div>
         </section>
 
-        <!-- FAQ SECTION -->
         <section id="faq" class="w-full max-w-4xl mx-auto px-6 md:px-12 space-y-8" aria-label="Faq Answers Container">
             <div class="space-y-2 text-center">
                 <span class="text-[9px] font-mono tracking-[0.5em] text-amber-600 block uppercase font-semibold">// KNOWLEDGE BASE</span>
@@ -245,7 +233,6 @@
             </div>
         </section>
 
-        <!-- FINAL CTA SECTION -->
         <section class="w-full max-w-4xl mx-auto px-6 text-center space-y-6 pt-12 border-t border-white/[0.03]">
             <h2 class="text-xl md:text-2xl font-display font-bold text-white tracking-tight uppercase">Evaluate Your Property's Discovery Status</h2>
             <p class="text-xs text-zinc-400 max-w-xl mx-auto font-light leading-relaxed">
@@ -259,7 +246,6 @@
         </section>
     </div>
 
-    <!-- Footer -->
     <footer class="w-full border-t border-white/5 bg-zinc-950 py-12 px-6 md:px-12 text-center" aria-label="Site Footer">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-[11px] font-mono tracking-wider text-zinc-500 uppercase">
             <p>SOVEREIGNGEO — AI Visibility Audits for Luxury Hospitality.</p>
@@ -267,7 +253,6 @@
         </div>
     </footer>
 
-    <!-- Interactive Layer Implementation Scripts -->
     <script>
         const lenis = new Lenis();
         function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
@@ -279,26 +264,18 @@
 
         function toggleFaq(element) {
             const isActive = element.classList.contains('active');
-            
-            // Dynamic closure of parallel nodes
-            document.querySelectorAll('.faq-item').forEach(item => {
-                item.classList.remove('active');
-            });
-            
-            if (!isActive) { 
-                element.classList.add('active'); 
-            }
+            document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+            if (!isActive) element.classList.add('active');
         }
 
-        // --- ASYNC FORMSPREE PIPELINE ---
+        // --- ASYNC FORMSPREE BYPASS WITH IMMEDIATE LOCAL REDIRECT ---
         const form = document.getElementById("formspree-audit-form");
         const submitBtn = document.getElementById("form-submit-btn");
         const statusMsg = document.getElementById("form-status-msg");
 
         form.addEventListener("submit", async (e) => {
-            e.preventDefault(); // Halt default browser document reload
+            e.preventDefault(); // Lock default server-side processing down
             
-            // Set Loading UI state
             submitBtn.disabled = true;
             submitBtn.innerHTML = `
                 <svg class="animate-spin h-4 w-4 text-black" fill="none" viewBox="0 0 24 24">
@@ -307,43 +284,30 @@
                 </svg>
                 <span>Processing Transmission...</span>`;
             
-            const formData = new FormData(form);
-
             try {
                 const response = await fetch(form.action, {
                     method: form.method,
-                    body: formData,
+                    body: new FormData(form),
                     headers: { 'Accept': 'application/json' }
                 });
 
                 if (response.ok) {
-                    // Render Elegant Success State Matrix Over Form Area
-                    statusMsg.innerHTML = `
-                        <span class="text-amber-600 text-lg">✓</span>
-                        <h3 class="text-white font-bold uppercase tracking-wider text-[11px]">Submission Transmitted</h3>
-                        <p class="text-zinc-400 font-sans font-light max-w-sm leading-relaxed">
-                            Your luxury asset entity specifications have been logged. Your designated executive advisor will compile the structural validation report within 72 business hours.
-                        </p>
-                    `;
-                    statusMsg.classList.remove("hidden");
-                    form.reset();
+                    // Success! Instantly execute client side redirect 
+                    window.location.href = "thank-you.html";
                 } else {
                     const data = await response.json();
                     throw new Error(data.errors ? data.errors.map(err => err.message).join(", ") : "Transmission failure.");
                 }
             } catch (error) {
-                // Graceful Error State Display with Self-Reset Option
                 statusMsg.innerHTML = `
                     <span class="text-red-500 text-lg">✕</span>
                     <h3 class="text-white font-bold uppercase tracking-wider text-[11px]">Transmission Interrupted</h3>
-                    <p class="text-zinc-400 font-sans font-light max-w-sm leading-relaxed">${error.message || 'An unexpected error occurred.'}</p>
+                    <p class="text-zinc-400 font-sans font-light max-w-sm leading-relaxed">${error.message}</p>
                     <button onclick="document.getElementById('form-status-msg').classList.add('hidden')" class="mt-4 px-4 py-2 border border-white/10 text-zinc-300 hover:text-white hover:border-amber-600 transition-colors uppercase text-[10px] tracking-wider">
-                        Retry Form Submission
+                        Retry
                     </button>
                 `;
                 statusMsg.classList.remove("hidden");
-            } finally {
-                // Restore button defaults
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = `<span>Claim Complimentary Audit</span>`;
             }
