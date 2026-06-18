@@ -1,28 +1,282 @@
-<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>SovereignGEO | Data Extraction Intake</title>    <script src="https://cdn.tailwindcss.com"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=200;400;600&family=Syne:wght=700;800&display=swap" rel="stylesheet">    <style>        body { background: #03060E; color: #A1A1AA; font-family: 'Plus Jakarta Sans', sans-serif; }        .font-display { font-family: 'Syne', sans-serif; }        html.lenis { height: auto; }        .lenis.lenis-smooth { scroll-behavior: auto !important; }        .luxury-gradient { background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }                .hover-line::after {            content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px;            background: #F59E0B; transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);        }        .hover-line:hover::after { width: 100%; }        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, padding 0.3s ease; }        .faq-item.active .faq-answer { max-height: 200px; padding-top: 12px; }        .faq-item.active .faq-icon { transform: rotate(45deg); color: #F59E0B; }    </style></head><body class="overflow-x-hidden min-h-screen flex flex-col">
-    <header class="fixed w-full z-50 bg-[#03060E]/90 backdrop-blur-md border-b border-white/[0.03] px-6 md:px-12 py-6">        <div class="max-w-7xl mx-auto flex flex-col xl:flex-row justify-between items-center gap-4">            <a href="index.html" class="text-sm font-bold tracking-[0.3em] text-white font-display flex items-center gap-3">                <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">                    <circle cx="12" cy="12" r="4" />                    <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />                </svg>                SOVEREIGN<span class="text-amber-500 font-normal">GEO</span>            </a>                        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[9px] uppercase tracking-[0.3em] font-semibold text-zinc-400">                <a href="index.html" class="hover:text-amber-500 transition relative hover-line">Home</a>                <a href="hospitality.html" class="hover:text-amber-500 transition relative hover-line">Hotels</a>                <a href="medical.html" class="hover:text-amber-500 transition relative hover-line">Medical</a>                <a href="automotive.html" class="hover:text-amber-500 transition relative hover-line">Automotive</a>                <a href="entertainment.html" class="hover:text-amber-500 transition relative hover-line">Entertainment</a>                <a href="education.html" class="hover:text-amber-500 transition relative hover-line">Education</a>                <a href="how-it-works.html" class="hover:text-amber-500 transition relative hover-line">Philosophy</a>                <a href="pricing.html" class="hover:text-amber-500 transition relative hover-line">Allocation</a>                <a href="about.html" class="hover:text-amber-500 transition relative hover-line">About</a>                <a href="audit.html" class="text-amber-500 relative font-bold pb-0.5 border-b border-amber-500/40">Audit</a>            </div>        </div>    </header>
-    <div id="content" class="flex-grow pt-48 xl:pt-40 pb-24 space-y-32">        <main class="w-full max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">            <div class="lg:col-span-6 space-y-6">                <div class="space-y-4">                    <span class="text-[9px] font-mono tracking-[0.5em] text-amber-500 block uppercase">// INTAKE PROTOCOL</span>                    <h1 class="text-4xl sm:text-5xl font-display font-extrabold text-white leading-[1.05] tracking-tight">                        Evaluate Your <br><span class="luxury-gradient">Entity Vector.</span>                    </h1>                </div>                <p class="text-sm leading-relaxed text-zinc-400 font-light">                    Submit your organization endpoints. Our infrastructure will evaluate your indexing profile and calculate data dilution metrics across conversational search environments.                </p>            </div>
-            <div class="lg:col-span-6 border border-white/5 bg-zinc-950/40 p-8 backdrop-blur-md font-mono text-xs text-zinc-400">                <form action="https://formspree.io/f/xojzlaze" method="POST" class="space-y-6">                    <input type="hidden" name="_next" value="https://sovereigngeoagency.com/thanks.html">                    <input type="text" name="_gotcha" style="display:none">                    <div class="space-y-2">                        <label class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold">Corporate Entity Name</label>                        <input type="text" name="entity_name" required placeholder="e.g., Enterprise Holdings" class="w-full bg-black/40 border border-white/10 p-4 text-white focus:outline-none focus:border-amber-500 transition-colors">                    </div>                    <div class="space-y-2">                        <label class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold">Secure Root Domain</label>                        <input type="text" name="root_domain" required placeholder="https://enterprise.com" class="w-full bg-black/40 border border-white/10 p-4 text-white focus:outline-none focus:border-amber-500 transition-colors">                    </div>                    <div class="space-y-2">                        <label class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold">Communication Endpoint</label>                        <input type="email" name="email" required placeholder="internal@enterprise.com" class="w-full bg-black/40 border border-white/10 p-4 text-white focus:outline-none focus:border-amber-500 transition-colors">                    </div>                    <button type="submit" class="w-full py-4 text-center bg-amber-500 text-black font-bold uppercase text-[10px] tracking-widest transition-all duration-300 hover:bg-amber-400">                        Analyze System Node                    </button>                </form>            </div>        </main>
-        <section class="w-full max-w-4xl mx-auto px-8 space-y-8">            <div class="space-y-2 text-center lg:text-left"><span class="text-[9px] font-mono tracking-[0.5em] text-amber-500 block uppercase">// KNOWLEDGE BASE</span><h2 class="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">System FAQ</h2></div>            <div class="border border-white/5 bg-zinc-950/20 divide-y divide-white/5 font-mono text-xs">
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Who owns SovereignGEO?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Founded and led by Gaddiel Gabriel, SovereignGEO is backed by a distributed network of technical data architects and digital security specialists built to handle modern brand delivery.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">When was the agency founded?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">The core framework was engineered in 2025, operating covertly in stealth mode before launching our global-facing public intake network over the past two weeks.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Where are you located?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Headquartered in Cape Town, South Africa, operating on an absolute global infrastructure serving all industries across international borders.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Why did you start SovereignGEO?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Traditional search engines are losing market share as conversational AIs take over. We were founded to close the trust gap—ensuring businesses aren't erased, misquoted, or shadowed by faulty artificial intelligence models.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Who is your ideal client?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">We operate across all industries. Any organization globally that relies on digital authority, accurate public information, or inbound client generation needs an AI presence check.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">How can we contact you directly?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Direct escalations, partnerships, and high-priority custom consulting requests can be routed straight to our founder at gaddiel@sovereigngeoagency.com.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">In plain English, what does SovereignGEO actually do?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">We make sure that AI platforms like ChatGPT, Google Gemini, and Claude actually know your business exists, state your services accurately, and recommend you directly to users asking questions.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">What is an "AI Search Audit"?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">It is an algorithmic scan. We query and break down major AI platforms to discover exactly what they are telling potential clients about your business when you aren't looking.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Why should my business care about how AI platforms see us?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Millions of decision-makers are shifting from Google searches to asking AI assistants directly. If an AI app doesn't accurately list your business, or claims a competitor is better suited, you lose that revenue instantly.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">What does "data dilution" mean?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Data dilution occurs when fragmented web trails—outdated blog posts, historic records, or digital noise—confuse AI engines, leading them to dilute or ignore your official brand data entirely.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Are AI models giving people wrong information about my company?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Regularly. Due to a tendency to 'hallucinate,' AI models routinely invent non-existent services, state incorrect contact data, or falsely imply a company is out of business based on fragmented datasets.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">How do you fix my company's presence on AI platforms?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">We engineer and clarify your web presence architecture, tailoring index structures so AI web scrapers cleanly absorb your absolute corporate truth with zero mixed signals.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Do you need access to our private data or passwords?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">No. All analysis is completely non-invasive. We evaluate your network strictly from the outside, mimicking exactly how public AI models crawl and read your identity.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Is the intake form secure?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Yes. Our form processes connections directly using specialized validation parameters, safeguarding all domain targets and company metadata.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">What happens after I click "Analyze System Node"?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Your information is logged into our evaluation pipeline. Our system analyzes your site's compatibility with conversational search scrapers to pinpoint structural delivery errors.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">How long does it take to receive our data?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Your initial assessment metrics and clean systemic breakdown report are finalized and pushed directly to your secure inbox inside a 24-48 hour window.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Will the final report be simple to interpret?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Absolutely. While the behind-the-scenes mechanics are deeply technical, your report maps metrics directly to tangible business visibility and real-world executive steps.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Is this a one-time setup?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">No. Large language models (LLMs) are constantly updated and retrained on new web materials. Sustained optimization ensures your brand maintains its ranking edge as algorithms evolve.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">How much does a typical evaluation cost?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Baseline data collection via our primary intake form is initiated without friction. Custom corporate configurations are scoped depending on your total digital footprint.</p></div>
-                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)"><div class="flex justify-between items-center"><h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Why can't our marketing team fix this?</h3><span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span></div><p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Standard marketing and traditional SEO focus exclusively on simple keywords for search bars. Re-engineering entity references for neural networks requires deep database model optimization.</p></div>
-            </div>        </section>    </div>
-    <script>        const lenis = new Lenis();        function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }        requestAnimationFrame(raf);        document.addEventListener("DOMContentLoaded", () => {            gsap.from("#content", { opacity: 0, y: 40, duration: 1.5, ease: "power4.out" });        });
-        function toggleFaq(element) {            const isActive = element.classList.contains('active');            document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));            if (!isActive) { element.classList.add('active'); }        }    </script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SovereignGEO | Luxury Hotel AI Visibility Audits</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=200;400;500;600&family=Syne:wght=700;800&display=swap" rel="stylesheet">
+    <style>
+        body { background: #03060E; color: #A1A1AA; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-display { font-family: 'Syne', sans-serif; }
+        html.lenis { height: auto; }
+        .lenis.lenis-smooth { scroll-behavior: auto !important; }
+        .luxury-gradient { background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hover-line::after {
+            content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px;
+            background: #F59E0B; transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .hover-line:hover::after { width: 100%; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, padding 0.3s ease; }
+        .faq-item.active .faq-answer { max-height: 300px; padding-top: 12px; }
+        .faq-item.active .faq-icon { transform: rotate(45deg); color: #F59E0B; }
+    </style>
+</head>
+<body class="overflow-x-hidden min-h-screen flex flex-col">
+    
+    <header class="fixed w-full z-50 bg-[#03060E]/90 backdrop-blur-md border-b border-white/[0.03] px-6 md:px-12 py-6">
+        <div class="max-w-7xl mx-auto flex flex-col xl:flex-row justify-between items-center gap-4">
+            <a href="index.html" class="text-sm font-bold tracking-[0.3em] text-white font-display flex items-center gap-3">
+                <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+                </svg>
+                SOVEREIGN<span class="text-amber-500 font-normal">GEO</span>
+            </a>
+            
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-[9px] uppercase tracking-[0.3em] font-semibold text-zinc-400">
+                <a href="index.html" class="hover:text-amber-500 transition relative hover-line">Home</a>
+                <a href="about.html" class="hover:text-amber-500 transition relative hover-line">About</a>
+                <a href="#faq" class="hover:text-amber-500 transition relative hover-line">FAQ</a>
+                <a href="#audit-form" class="text-amber-500 relative font-bold pb-0.5 border-b border-amber-500/40">Audit</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="content" class="flex-grow pt-48 xl:pt-40 pb-24 space-y-32">
+        <!-- HERO & FORM SECTION -->
+        <main id="audit-form" class="w-full max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div class="lg:col-span-6 space-y-8">
+                <div class="space-y-4">
+                    <span class="text-[9px] font-mono tracking-[0.5em] text-amber-500 block uppercase">// EXECUTIVE ADVISORY</span>
+                    <h1 class="text-4xl sm:text-5xl font-display font-extrabold text-white leading-[1.05] tracking-tight">
+                        Evaluate Your Hotel's Visibility Across <br><span class="luxury-gradient">AI Search Platforms.</span>
+                    </h1>
+                </div>
+                <p class="text-sm leading-relaxed text-zinc-400 font-light">
+                    Luxury travelers increasingly rely on AI platforms during destination research. We identify how your property appears across major AI systems, where competitors are being recommended instead, and what visibility gaps may be limiting discovery.
+                </p>
+                
+                <div class="pt-4 border-t border-white/[0.05]">
+                    <p class="text-[10px] font-mono tracking-wider uppercase text-zinc-500 mb-2">Assessed Across:</p>
+                    <p class="text-xs text-white font-medium tracking-wide">
+                        ChatGPT <span class="text-amber-500/40 mx-2">•</span> Gemini <span class="text-amber-500/40 mx-2">•</span> Perplexity <span class="text-amber-500/40 mx-2">•</span> Google AI Overviews
+                    </p>
+                </div>
+
+                <!-- DELIVERABLES BOX -->
+                <div class="border border-white/5 bg-zinc-950/20 p-6 space-y-4 rounded-sm">
+                    <h3 class="text-xs font-mono font-bold uppercase tracking-wider text-white">What You'll Receive</h3>
+                    <ul class="space-y-2 text-xs text-zinc-400">
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✓</span> AI Visibility Score</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✓</span> Competitor Recommendation Analysis</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✓</span> Structured Data Review</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✓</span> Executive Summary PDF</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✓</span> Recommended Actions Ranked By Impact</li>
+                    </ul>
+                    <p class="text-[10px] font-mono text-zinc-500 pt-2 border-t border-white/[0.03]">Delivered within 72 hours</p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 border border-white/5 bg-zinc-950/40 p-8 backdrop-blur-md font-mono text-xs text-zinc-400 rounded-sm">
+                <form action="https://formspree.io/f/xojzlaze" method="POST" class="space-y-6">
+                    <input type="hidden" name="_next" value="https://sovereigngeoagency.com/thanks.html">
+                    <input type="text" name="_gotcha" style="display:none">
+                    <div class="space-y-2">
+                        <label class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold">Property Name</label>
+                        <input type="text" name="property_name" required placeholder="e.g., The Grand Horizon Resort" class="w-full bg-black/40 border border-white/10 p-4 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold">Hotel Website</label>
+                        <input type="url" name="hotel_website" required placeholder="https://resortwebsite.com" class="w-full bg-black/40 border border-white/10 p-4 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold">Work Email</label>
+                        <input type="email" name="email" required placeholder="executive@resortwebsite.com" class="w-full bg-black/40 border border-white/10 p-4 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                    </div>
+                    <div class="space-y-4">
+                        <button type="submit" class="w-full py-4 text-center bg-amber-500 text-black font-bold uppercase text-[10px] tracking-widest transition-all duration-300 hover:bg-amber-400">
+                            Claim Complimentary Audit
+                        </button>
+                        <div class="flex flex-wrap justify-between gap-2 text-[10px] text-zinc-500 px-1 font-sans">
+                            <span class="flex items-center gap-1">✓ No sales obligation</span>
+                            <span class="flex items-center gap-1">✓ Confidential review</span>
+                            <span class="flex items-center gap-1">✓ Delivered directly to inbox</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!-- AUDIT PREVIEW SECTION -->
+        <section class="w-full max-w-7xl mx-auto px-8 space-y-8">
+            <div class="space-y-2">
+                <span class="text-[9px] font-mono tracking-[0.5em] text-amber-500 block uppercase">// AUDIT INTELLIGENCE</span>
+                <h2 class="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">Recent Assessment Example</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="border border-white/5 bg-zinc-950/30 p-6 rounded-sm">
+                    <p class="text-[10px] font-mono uppercase tracking-wider text-zinc-500">AI Visibility Score</p>
+                    <p class="text-3xl font-display font-bold text-white mt-2">42/100</p>
+                </div>
+                <div class="border border-white/5 bg-zinc-950/30 p-6 rounded-sm">
+                    <p class="text-[10px] font-mono uppercase tracking-wider text-zinc-500">Missing From Tested Prompts</p>
+                    <p class="text-3xl font-display font-bold text-amber-500 mt-2">71%</p>
+                </div>
+                <div class="border border-white/5 bg-zinc-950/30 p-6 rounded-sm">
+                    <p class="text-[10px] font-mono uppercase tracking-wider text-zinc-500">Competitor Advantage</p>
+                    <p class="text-3xl font-display font-bold text-white mt-2">5.2x</p>
+                </div>
+                <div class="border border-white/5 bg-zinc-950/30 p-6 rounded-sm">
+                    <p class="text-[10px] font-mono uppercase tracking-wider text-zinc-500">Critical Visibility Gaps</p>
+                    <p class="text-3xl font-display font-bold text-white mt-2">24</p>
+                </div>
+            </div>
+            
+            <p class="text-xs leading-relaxed text-zinc-400 font-light max-w-3xl">
+                This example illustrates how structured data gaps and inconsistent authority signals can reduce a hotel's visibility across AI-generated recommendations.
+            </p>
+        </section>
+
+        <!-- PROCESS SECTION -->
+        <section class="w-full max-w-7xl mx-auto px-8 space-y-12">
+            <div class="space-y-2">
+                <span class="text-[9px] font-mono tracking-[0.5em] text-amber-500 block uppercase">// METHODOLOGY</span>
+                <h2 class="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">How The Audit Works</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="space-y-3">
+                    <span class="text-xs font-mono font-bold text-amber-500">01 /</span>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-white font-mono">Prompt Testing</h3>
+                    <p class="text-xs text-zinc-400 font-light leading-relaxed">We test real traveler prompts tailored to your destination and property type.</p>
+                </div>
+                <div class="space-y-3">
+                    <span class="text-xs font-mono font-bold text-amber-500">02 /</span>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-white font-mono">Cross-Platform Analysis</h3>
+                    <p class="text-xs text-zinc-400 font-light leading-relaxed">We measure visibility across major AI platforms simultaneously.</p>
+                </div>
+                <div class="space-y-3">
+                    <span class="text-xs font-mono font-bold text-amber-500">03 /</span>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-white font-mono">Gap Identification</h3>
+                    <p class="text-xs text-zinc-400 font-light leading-relaxed">We identify competitor advantages and missing brand signals.</p>
+                </div>
+                <div class="space-y-3">
+                    <span class="text-xs font-mono font-bold text-amber-500">04 /</span>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-white font-mono">Executive Briefing</h3>
+                    <p class="text-xs text-zinc-400 font-light leading-relaxed">You receive an executive-ready audit with prioritized recommendations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section id="faq" class="w-full max-w-4xl mx-auto px-8 space-y-8">
+            <div class="space-y-2 text-center lg:text-left">
+                <span class="text-[9px] font-mono tracking-[0.5em] text-amber-500 block uppercase">// KNOWLEDGE BASE</span>
+                <h2 class="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="border border-white/5 bg-zinc-950/20 divide-y divide-white/5 font-mono text-xs">
+                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Is the audit really complimentary?</h3>
+                        <span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span>
+                    </div>
+                    <p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Yes. The introductory assessment is provided without cost or obligation.</p>
+                </div>
+
+                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Do you need access to our systems?</h3>
+                        <span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span>
+                    </div>
+                    <p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">No. We evaluate only publicly available information, similar to how AI platforms discover and interpret your brand.</p>
+                </div>
+
+                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Which platforms are included?</h3>
+                        <span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span>
+                    </div>
+                    <p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">ChatGPT, Gemini, Perplexity, and Google AI Overviews.</p>
+                </div>
+
+                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">How long does delivery take?</h3>
+                        <span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span>
+                    </div>
+                    <p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Most assessments are delivered within 72 hours.</p>
+                </div>
+
+                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Is our information confidential?</h3>
+                        <span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span>
+                    </div>
+                    <p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Yes. Audit findings are delivered privately and are not shared externally.</p>
+                </div>
+
+                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">How is this different from traditional hospitality consulting?</h3>
+                        <span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span>
+                    </div>
+                    <p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">We focus entirely on the emerging luxury discovery layer. Rather than analyzing backward-looking marketplace data, we help brands ensure your property is accurately represented across emerging AI-driven discovery channels.</p>
+                </div>
+
+                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">What happens after we submit the form?</h3>
+                        <span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span>
+                    </div>
+                    <p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Our hospitality analysts immediately begin the assessment process to track exactly where and how your hotel emerges during affluent guest inquiries.</p>
+                </div>
+
+                <div class="faq-item p-6 cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-bold uppercase text-[10px] tracking-wider transition-colors duration-300">Will our information remain private?</h3>
+                        <span class="faq-icon text-zinc-500 transition-transform duration-300 text-sm font-bold">+</span>
+                    </div>
+                    <p class="faq-answer text-zinc-400 leading-relaxed font-sans text-sm font-light">Strictly. All data and analysis results are handled under strict confidentiality guidelines and delivered exclusively to your verified corporate email address.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA SECTION -->
+        <section class="w-full max-w-4xl mx-auto px-8 text-center space-y-6 pt-12 border-t border-white/[0.03]">
+            <h2 class="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">Evaluate Your Hotel's Discovery Status</h2>
+            <p class="text-xs text-zinc-400 max-w-xl mx-auto font-light leading-relaxed">
+                Understand how AI platforms currently interpret and recommend your property before visibility gaps influence traveler decisions.
+            </p>
+            <div class="pt-2">
+                <a href="#audit-form" class="inline-block px-8 py-4 bg-amber-500 text-black font-mono font-bold uppercase text-[10px] tracking-widest transition-all duration-300 hover:bg-amber-400 rounded-sm">
+                    Claim Complimentary Audit
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="w-full border-t border-white/[0.03] bg-[#03060E] py-8 text-center text-[10px] font-mono text-zinc-500 tracking-widest uppercase">
+        SovereignGEO — AI Visibility Audits for Luxury Hospitality.
+    </footer>
+
+    <script>
+        const lenis = new Lenis();
+        function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+        requestAnimationFrame(raf);
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.from("#content", { opacity: 0, y: 40, duration: 1.5, ease: "power4.out" });
+        });
+
+        function toggleFaq(element) {
+            const isActive = element.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+            if (!isActive) { element.classList.add('active'); }
+        }
+    </script>
+</body>
+</html>
