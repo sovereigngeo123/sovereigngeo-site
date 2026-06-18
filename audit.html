@@ -97,10 +97,9 @@
                 </div>
             </div>
 
-            <!-- THE AUDIT APPLICATION FORM -->
-            <div class="lg:col-span-6 border border-white/5 bg-zinc-950/60 p-8 backdrop-blur-md font-mono text-xs text-zinc-400 rounded-sm">
-                <form action="https://formspree.io/f/xojzlaze" method="POST" class="space-y-6">
-                    <input type="hidden" name="_next" value="https://sovereigngeoagency.com/thank-you.html">
+            <!-- THE AUDIT APPLICATION FORM CONTAINER -->
+            <div class="lg:col-span-6 border border-white/5 bg-zinc-950/60 p-8 backdrop-blur-md font-mono text-xs text-zinc-400 rounded-sm relative">
+                <form id="formspree-audit-form" action="https://formspree.io/f/xojzlaze" method="POST" class="space-y-6">
                     <input type="text" name="_gotcha" style="display:none">
                     
                     <div class="space-y-2">
@@ -117,8 +116,8 @@
                     </div>
                     
                     <div class="space-y-4 pt-2">
-                        <button type="submit" class="w-full py-4 text-center bg-amber-600 text-black font-semibold uppercase text-[11px] tracking-widest transition-all duration-300 hover:bg-white shadow-md">
-                            Claim Complimentary Audit
+                        <button type="submit" id="form-submit-btn" class="w-full py-4 text-center bg-amber-600 text-black font-semibold uppercase text-[11px] tracking-widest transition-all duration-300 hover:bg-white shadow-md flex justify-center items-center gap-2">
+                            <span>Claim Complimentary Audit</span>
                         </button>
                         <div class="flex flex-wrap justify-between gap-2 text-[10px] text-zinc-500 px-1 font-sans font-light">
                             <span class="flex items-center gap-1.5">✓ Professional review criteria</span>
@@ -126,6 +125,11 @@
                         </div>
                     </div>
                 </form>
+
+                <!-- Dynamic Status Message Overlay Area -->
+                <div id="form-status-msg" class="hidden absolute inset-0 bg-zinc-950/95 flex flex-col items-center justify-center p-8 text-center space-y-4 rounded-sm transition-all duration-300">
+                    <!-- Dynamic updates loaded via JS below -->
+                </div>
             </div>
         </main>
 
@@ -285,6 +289,65 @@
                 element.classList.add('active'); 
             }
         }
+
+        // --- ASYNC FORMSPREE PIPELINE ---
+        const form = document.getElementById("formspree-audit-form");
+        const submitBtn = document.getElementById("form-submit-btn");
+        const statusMsg = document.getElementById("form-status-msg");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault(); // Halt default browser document reload
+            
+            // Set Loading UI state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `
+                <svg class="animate-spin h-4 w-4 text-black" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <span>Processing Transmission...</span>`;
+            
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    // Render Elegant Success State Matrix Over Form Area
+                    statusMsg.innerHTML = `
+                        <span class="text-amber-600 text-lg">✓</span>
+                        <h3 class="text-white font-bold uppercase tracking-wider text-[11px]">Submission Transmitted</h3>
+                        <p class="text-zinc-400 font-sans font-light max-w-sm leading-relaxed">
+                            Your luxury asset entity specifications have been logged. Your designated executive advisor will compile the structural validation report within 72 business hours.
+                        </p>
+                    `;
+                    statusMsg.classList.remove("hidden");
+                    form.reset();
+                } else {
+                    const data = await response.json();
+                    throw new Error(data.errors ? data.errors.map(err => err.message).join(", ") : "Transmission failure.");
+                }
+            } catch (error) {
+                // Graceful Error State Display with Self-Reset Option
+                statusMsg.innerHTML = `
+                    <span class="text-red-500 text-lg">✕</span>
+                    <h3 class="text-white font-bold uppercase tracking-wider text-[11px]">Transmission Interrupted</h3>
+                    <p class="text-zinc-400 font-sans font-light max-w-sm leading-relaxed">${error.message || 'An unexpected error occurred.'}</p>
+                    <button onclick="document.getElementById('form-status-msg').classList.add('hidden')" class="mt-4 px-4 py-2 border border-white/10 text-zinc-300 hover:text-white hover:border-amber-600 transition-colors uppercase text-[10px] tracking-wider">
+                        Retry Form Submission
+                    </button>
+                `;
+                statusMsg.classList.remove("hidden");
+            } finally {
+                // Restore button defaults
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = `<span>Claim Complimentary Audit</span>`;
+            }
+        });
     </script>
 </body>
 </html>
