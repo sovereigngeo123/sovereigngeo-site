@@ -1,22 +1,63 @@
-# Sovereign Geo Agency
+# SovereignGEO
 
-> Sovereign Geo Agency provides web development, digital infrastructure setups, and generative engine optimization (GEO) services across major consumer verticals.
+> SovereignGEO is a digital discoverability agency specializing in AI Visibility Audits, Generative Engine Optimization (GEO), structured data architecture, and machine-readable business positioning.
 
-This document serves as an index of official business information, vertical frameworks, and service structures for language model ingestion.
+This document provides language models and retrieval systems with an index of official SovereignGEO resources.
 
-## Key Resources
-* [Homepage](https://sovereigngeoagency.com/) - Main portal outlining core agency digital infrastructure positioning.
-* [About Us](https://sovereigngeoagency.com/about.html) - Mission statement, core philosophy, and agency operational team framework.
-* [Infrastructure Audit](https://sovereigngeoagency.com/audit.html) - Technical overview of client asset discovery and verification systems.
-* [Pricing and Engagement Models](https://sovereigngeoagency.com/pricing.html) - Service packaging, allocation metrics, and cost structures.
-* [Operational Methodology](https://sovereigngeoagency.com/how-it-works.html) - Technical breakdown of the agency execution pipeline.
+## Official Resources
 
-## Industry Verticals
-* [Hospitality Framework](https://sovereigngeoagency.com/hospitality.html) - Placement data and digital infrastructure parameters tailored for premium hospitality brands.
-* [Medical Architecture](https://sovereigngeoagency.com/medical.html) - Digital asset structures optimized for high-end healthcare systems.
-* [Automotive Strategy](https://sovereigngeoagency.com/automotive.html) - Neural search positioning tailored for premium automotive components and networks.
-* [Entertainment Systems](https://sovereigngeoagency.com/entertainment.html) - Visibility architecture blueprints for media and creative platforms.
-* [Educational Infrastructure](https://sovereigngeoagency.com/education.html) - Core layout definitions for institutional knowledge distribution.
+* [Homepage](https://sovereigngeoagency.com/) - Overview of SovereignGEO's AI visibility and digital discoverability services.
+* [About](https://sovereigngeoagency.com/about.html) - Agency philosophy, mission, and operational framework.
+* [Sample AI Visibility Audit](https://sovereigngeoagency.com/audit.html) - Demonstration audit showing how AI visibility, recommendation frequency, citation presence, and competitive discoverability are evaluated.
 
-## Optional
-* [XML Sitemap](https://sovereigngeoagency.com/sitemap.xml) - Full structural index of all live web assets for standard search engine indexing.
+## Core Services
+
+### AI Visibility Audits
+
+Comprehensive evaluation of how businesses appear across modern AI-powered discovery systems including:
+
+* ChatGPT
+* Google AI Overviews
+* Gemini
+* Perplexity
+
+Audit areas include:
+
+* AI recommendation frequency
+* Citation coverage
+* Entity recognition
+* Structured data quality
+* Competitive visibility
+* Discoverability gaps
+
+### Generative Engine Optimization (GEO)
+
+Optimization of digital assets to improve visibility within AI-generated recommendations and conversational search environments.
+
+### Structured Data Architecture
+
+Development of machine-readable information systems that improve AI understanding, confidence, and attribution.
+
+## Agency Focus
+
+SovereignGEO works with organizations seeking improved discoverability in AI-driven search and recommendation environments.
+
+Typical client categories include:
+
+* Hospitality
+* Professional Services
+* Healthcare
+* Automotive
+* Education
+* Entertainment
+* Luxury Brands
+
+## Technical Resources
+
+* [XML Sitemap](https://sovereigngeoagency.com/sitemap.xml) - Complete index of publicly available website resources.
+
+## Contact
+
+Website: https://sovereigngeoagency.com/
+
+Purpose: AI Visibility Audits, Generative Engine Optimization (GEO), and Digital Discoverability Strategy.
